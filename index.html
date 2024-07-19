@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="company-details">
+            <h1>Elite Resumes</h1>
+            <p>Elite Professional Solutions Pvt. Ltd.</p>
+            <p>No: 4/461, 2nd Floor, Valamkottil Towers, Judgemukku, Kakkanad, Kochi, Kerala PIN: 682021</p>
+            <p>Contact Us:</p>
+            <p>Mobile: +917902468500</p>
+            <p>Email: createresumewithus@gmail.com, support@eliteresumes.in</p>
+        </div>
+        <div class="logo">
+            <img src="logo.png" alt="Company Logo">
+        </div>
+    </div>
+
+    <h2>Payment Receipt</h2>
+
+    <div class="customer-details">
+        <p><strong>Customer Name:</strong> <span id="customerNameOutput"></span></p>
+        <p><strong>Contact Number:</strong> <span id="contactNumberOutput"></span></p>
+        <p><strong>Email:</strong> <span id="emailOutput"></span></p>
+    </div>
+
+    <div class="plan-details">
+        <h3>Plan Details</h3>
+        <p id="planDetailsOutput"></p>
+    </div>
+
+    <div class="total-price">
+        <p><strong>Total:</strong> ₹<span id="totalPriceOutput"></span></p>
+    </div>
+
+    <div class="amount-words">
+        <p><strong>Amount in Words:</strong> <span id="amountWordsOutput"></span></p>
+    </div>
+
+    <div class="thank-you">
+        <p>Thank you for choosing Elite Resumes!</p>
+        <p>☑ This receipt is electronically generated.</p>
+    </div>
+
+    <button id="downloadPdf">Download PDF</button>
+
+    <script src="retrieve_data.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.company-details {
+    max-width: 60%;
+}
+
+.company-details h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #006699;
+}
+
+.company-details p {
+    margin: 5px 0;
+}
+
+.logo img {
+    max-width: 200px; /* Increased the maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #006699;
+    padding-bottom: 10px;
+}
+
+.customer-details, .plan-details, .total-price, .amount-words, .thank-you {
+    margin-top: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.customer-details p, .plan-details p, .total-price p, .amount-words p, .thank-you p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.customer-details strong, .plan-details strong, .total-price strong, .amount-words strong {
+    display: inline-block;
+    width: 200px;
+}
+#downloadPdf {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #006699;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#downloadPdf:hover {
+    background-color: #005580;
+}
+
+/* Hide the download button when generating the PDF */
+@media print {
+    #downloadPdf {
+        display: none;
+    }
+}
